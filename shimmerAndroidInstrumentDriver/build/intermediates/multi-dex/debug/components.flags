@@ -1,0 +1,54 @@
+-injars /home/hao/AndroidStudioProjects/ShimmerAndroidInstrumentDriver/shimmerAndroidInstrumentDriver/build/intermediates/multi-dex/debug/allclasses.jar
+-outjars /home/hao/AndroidStudioProjects/ShimmerAndroidInstrumentDriver/shimmerAndroidInstrumentDriver/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /home/hao/Android/Sdk/build-tools/21.1.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration /home/hao/AndroidStudioProjects/ShimmerAndroidInstrumentDriver/shimmerAndroidInstrumentDriver/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.MainActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.BTDeviceListActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.RecogIntermittentActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.RecogContinousActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.TrainingActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.activities.SettingsActivity {
+    <init>();
+}
+
+-keep class edu.ucdavis.myshimmerapp.services.MyShimmerService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

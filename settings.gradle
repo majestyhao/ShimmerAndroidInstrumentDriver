@@ -1,0 +1,2 @@
+include ':shimmerDriver'
+include ':shimmerAndroidInstrumentDriver'
